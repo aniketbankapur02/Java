@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.Use_sample4_add&apos; to &apos;Use_sample4&apos;&#x0D;&#x0A;- Original project: &apos;set_up&apos;&#x0D;&#x0A;- Original element: &apos;com.Use_sample4_add&apos;&#x0D;&#x0A;- Renamed element: &apos;com.Use_sample4&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Use_sample4_add&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com{Use_sample4_add.java[Use_sample4_add" matchStrategy="1" name="Use_sample4" qualified="false" references="true" similarDeclarations="false" stamp="1732821146602" textual="false" version="1.0"/>
+</session>

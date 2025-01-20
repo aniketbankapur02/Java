@@ -1,0 +1,14 @@
+package com;
+import com.Calculator; // using class of simple4 java which is package private
+
+
+
+ class Use_sample4_add {// private no visibility required
+		public static void main(String[] args) {
+			// add method of calculator is not static so make object
+			Calculator person1 = new Calculator();
+			int k = person1.add(1, 2);
+			
+			System.out.println(k);
+		}
+}

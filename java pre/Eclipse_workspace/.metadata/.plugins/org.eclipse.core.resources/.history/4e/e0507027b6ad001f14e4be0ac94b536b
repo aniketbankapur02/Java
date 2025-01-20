@@ -1,0 +1,11 @@
+package com;
+import importing_package.Simple;
+public class Simple4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Simple ref_var = new Simple();
+		ref_var.main(null);
+	}
+
+}

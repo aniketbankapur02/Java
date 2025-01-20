@@ -1,0 +1,14 @@
+package com;
+import com.Calculator; // using class of simple4 java which is package private so i can use it with no issues as i am in com package and calulator is also part of com package
+
+
+
+ class Use_sample4 {// private no visibility required
+		public static void main(String[] args) {
+			// add method of calculator is not static so make object
+			Calculator person1 = new Calculator();
+			int k = person1.add(1, 2);
+			
+			System.out.println(k);
+		}
+}
