@@ -219,6 +219,18 @@ Example: float + double → double.
 
              */
             System.out.println("नमस्कार");
+
+//--------------------Q to find cast of this expressiona and cast of bracket 1,2,3
+            byte b1 = 42;
+            char c1 = 'a';
+            short s = 1024;
+            int i = 50000;
+            float f1 = 5.67f;
+            double d = 0.1234;
+            double result = (f1 * b1) + (i / c1) - (d * s);
+            // float + int - double = double
+            System.out.println((f1 * b) + " " + (i / c1) + " " + (d * s));
+            System.out.println(result);
           
           
 

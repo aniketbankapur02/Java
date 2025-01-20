@@ -9,7 +9,7 @@ data types
 deafult once in real is double to avoid floating reducing error
 typecasting
 
-durga soft notes and gpt
+read durga soft notes and gpt
 operators
 expressions rules etc
 asso and precendence 
@@ -35,6 +35,7 @@ public class u2_primitive {
         float real = 9.99f;// now 9.99 is float bec od explicit menstioning via f
 
         boolean check = true; // or flase
+        
 
 
     }
