@@ -63,13 +63,39 @@ larger to smaller is not possible
          but here byte size is of 8 bits therefore it can store  0 to 255
          so byte will cut off number greater than 256 by doing % via 256
          256 % 256 = 0
-         256 % 256 = 1
-         257 % 256 = 2
+         257 % 256 = 1
+         258 % 256 = 2
          */
 
+         short s = 145;
+
+         byte b3 = (byte)s;
+         /*
+          here the type converstion is of 145 short to byte 
+          and byte cannot handle 145 as range is -128 to -1 and 0 to 127
+          so byte will cut off 145 to -111 by narrowing
+          steps
+          1) convert 145 into bits
+          145 = 10010001 in binary
+          2) convert bits into byte format
+
+          byte formate 1 sign bit and 7 data bit
+          thats why combo is 2^7 0 to 127 and -1 to -128
+
+          10010001 = 1  0010001 
+              = -ve bit  7 bit data
+
+          3) convert 7 bit data 0010001 to 2's compliment 
+           0010001 -> 111 (2's compliment)
+
+           or convert 10010001 into decimal and add sign acc to 1st bit 
+           
+           so final result is -111
+          */
 
 
-//-----------------------automatic type promotion in expression----------------------------------------
+
+//-----------------------3) automatic type promotion in expression----------------------------------------
 
         
     /*
