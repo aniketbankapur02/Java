@@ -1,5 +1,11 @@
 package U1_basics_kunal;
+// notes in shreyansh and my book
 
+
+/*
+ note deault values are only given for static and inctance vribale (obj.a)
+ no default are given for local block method 
+ */
 public class u5_datatypes {
     public static void main(String[] args) {
         byte b = 1;
@@ -14,6 +20,8 @@ public class u5_datatypes {
         float f2 = (float)1.1;
 
         double d = 1.11;
+
+        boolean b1 = true;
 
 
 
