@@ -26,7 +26,7 @@ problem faced
 how to know whether user has done his registration or it is invalid username
 take hellp of other fields like id wheather he has registered or not
  */
-package u3_practice;
+package u3_practice_GPT;
 
 import java.util.Scanner;
 

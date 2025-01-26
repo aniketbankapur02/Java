@@ -1,4 +1,4 @@
-package u3_practice;
+package u3_practice_GPT;
 
 /*
 Login System: Write a program that asks for a username and password. Validate the input against pre-defined values.

@@ -22,7 +22,7 @@ Constraints:
 
 Each price is a non-negative float (e.g., 0.0 <= price <= 1000.0).
  */
-package u3_practice;
+package u3_practice_GPT;
 
 import java.util.Scanner;
 

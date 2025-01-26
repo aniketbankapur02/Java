@@ -1,6 +1,17 @@
-package u3_practice;
+package u3_practice_GPT;
 
 /*
+GPT java pahse 1 assignment 
+topics
+Topic for assignment
+
+Primitive Data Types and Variables
+Local static instance instance ,constant variable
+Keywords and Identifiers,literals
+Input and Output in Java (Scanner and System.in)
+All type casting
+
+
  Practical Use Cases
 Unit Converter: Write a program that converts inches to centimeters, kilograms to pounds, and Celsius to Fahrenheit using constants.
 Grade Calculator: Accept marks of three subjects from the user, calculate the percentage, and assign grades based on the percentage.
