@@ -7,6 +7,8 @@ public class test {
         package_1.test.main(args);
 
         package_1.test.a = 1;
+        // you cannot directly access you have to make object as it is non static
+        // package_1.test.b = 1;
 
 
         package_1.test ob = new package_1.test();

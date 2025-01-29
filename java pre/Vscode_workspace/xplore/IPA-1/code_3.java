@@ -28,7 +28,7 @@ class Person {
      this.Brand_name = Brand_name;
     }
     void display_info(){
-        System.out.println("car id is "+id_car+"\nmodel of car is "+Brand_name );
+        System.out.println("car id is "+id_car+"\nmodel of car is "+Brand_name );// use this if parameter is of same name
     }
 
 

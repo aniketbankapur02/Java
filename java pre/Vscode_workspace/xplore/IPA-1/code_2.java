@@ -34,11 +34,15 @@ public class code_2 {
 String reversed = "";
 // reverse traversing to get char in revserse and storing it 
 for (int i = original.length() - 1; i >= 0; i--) {
-    reversed += original.charAt(i);
+    reversed += original.charAt(i); // we can append two strings via + operator 
+    // H
+    // H + e -> He
+    // He + l -> Hel
+    // and so on
     
 }
 // for (int i = original.length() - 1; i >= 0; i--) {
-//     reversed += original[i];
+    // reversed += original[i]; not possible as it String not char array 
     
 // }
 System.out.println(reversed);
@@ -81,11 +85,29 @@ for(int i = 0; i< arr.length;i++){
 }
 System.out.println(max);
 
+/*
+ there are methods for string class 
+ but array is not class it is int type 
+ so they  made Arrays class which they have static method
+ */
  Arrays.sort(arr) ; 
 
 for(int i = 0; i< arr.length;i++){
     System.out.println(arr[i]);
 }
+
+/*
+ Integer is int wrapper class 
+ local int is stored in stack 
+ so if we want primitives to be stored in heap we can do that via wrapper class
+ int -> Integer
+ collection works with heap object only we cannot use int we have to use wrapper class only
+ also it is help full in pass by value reflection
+ as in java reflection can be done via heap only using wrapper class we can pass local wrapper class to functions
+ as allocation is in heap it reflection can be done like whoever poiting to heap will have updated heap
+
+ so when you whan to so reflection and working with collection use wrapper class
+ */
 
  Integer arr2[] = new Integer[]{1,2,3,4};//now type is INteger class is array
  Arrays.sort(arr2,Collections.reverseOrder()) ; 

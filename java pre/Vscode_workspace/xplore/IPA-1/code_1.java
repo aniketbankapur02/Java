@@ -7,6 +7,8 @@ Inbuilt Scanner functions are as follows:
 Integer: nextInt()
 Float: nextFloat()
 String : next() and nextLine()
+nextINt,float and next always leaves \n in buffer which is input for nextLine
+so alaways clean buffer after nextINt,float and next if use nextLine as next input you can use nextLine to clean then use normal nextline input 
 
  */
 

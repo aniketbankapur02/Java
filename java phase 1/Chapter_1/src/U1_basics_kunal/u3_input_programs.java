@@ -5,6 +5,22 @@ package U1_basics_kunal;
  literal/constants  are the values like 10,1.1, string literals -> "aniket". char literal 'a' 
  */
 
+
+ /*
+  Importing Scanner Class:
+‘To use the Scanner we need to import the Scanner class from the util package as
+
+import java.util.Scanner;  
+Inbuilt Scanner functions are as follows:
+Integer: nextInt()
+Float: nextFloat()
+String : next() and nextLine()
+
+nextINt,float and next always leaves \n in buffer which is input for nextLine
+so alaways clean buffer after nextINt,float and next if use nextLine as next input you can use nextLine to clean then use normal nextline input 
+
+  */
+
 import java.util.Scanner;
 
 // wap for taing int input

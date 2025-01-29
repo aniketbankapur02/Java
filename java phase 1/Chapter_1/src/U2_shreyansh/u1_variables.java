@@ -10,6 +10,8 @@ public class u1_variables{
         // only constants are capital
         // and if second word joins in use camel case
         float PI = 3.14f;
+
+        float MIN_VALUE = 1;// constants are given like this all cpatial if second letter then give underscore
     
         int $hi; //allowed
         int _hi;
