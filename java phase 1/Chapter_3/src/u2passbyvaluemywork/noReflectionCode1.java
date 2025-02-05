@@ -1,5 +1,6 @@
 package u2passbyvaluemywork;
-
+// please refer notebook for notes
+// case 1 and 2 are here
 public class noReflectionCode1 {
     static void swap(int a,int b){ // swap happens locally it is not reflected to other method as stack frame is erased
         int temp = a;
@@ -8,7 +9,7 @@ public class noReflectionCode1 {
     }
 
     static void change (String name){// here name we have hexa code of given string pool value so name is pointing to that string 
-        name = "rahul sir"; // here name again point to new string value  and main name is not changed
+        name = "rahul sir"; // here name again point to new string value  and main name is not changed/modified
     }
     public static void main(String[] args) {
         int a = 1;
