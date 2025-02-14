@@ -18,7 +18,8 @@ Output : 11 13 17 19
 
  */
 public class Practice7 {
-    static void primeInRange(int n,int m){
+    // static int a = 1;
+   static void primeInRange(int n,int m){
         for (int i = n; i <= m; i++) {
             boolean check = true;
             if (i == 1) {
@@ -34,7 +35,17 @@ public class Practice7 {
             }
         }
     }
-    public static void main(String[] args) {
+
+    // void inVoice(){
+        
+    // }
+
+    // int inVoice(int a){
+    //     return 1;
+    // }
+
+
+    public static void main(String[] vargs) {
         Scanner sc = new Scanner(System.in);
         primeInRange(sc.nextInt(), sc.nextInt());
         sc.close();

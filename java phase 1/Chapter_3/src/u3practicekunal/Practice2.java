@@ -30,7 +30,7 @@ public class Practice2 {
 
     }
 
-    // vargs help to avoid use of method overloading you can have lot of parameter for inut
+    // vargs help to avoid use of method overloading you can have lot of parameter for input
     
     static void max(int ...var){
         int max = 0;
@@ -63,6 +63,7 @@ public class Practice2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // in vargs you can send any number of parameters
         // max(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());// 4 para
         // min(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
 
