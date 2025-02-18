@@ -56,14 +56,14 @@ public class U3_2DArray {
 
          // enhanced for loop
 
-         for(int i[] : arr2){//here we are giving 1 D array for each iteration so type should be same here i[] is assigned by reference code of row which has 1 D array(refer diagram) reference code given to i array so it traverse for 3 times as row 1 D arry is of 3 size to give three 1 D array
-            for (int j : i) {// here i array is travsered and it assinfed to j
+         for(int i[] : arr2){//here we are giving 1 D array for each iteration so type should be same here i[] is assigned by reference code of row of 2D array which stores reference code 1 D array(refer diagram) and this reference code given to i array so it traverse for 3 times as row 1 D arry is of 3 size to give three 1 D array
+            for (int j : i) {// here i array is travsered and each element of i array assigned to j
                 System.out.print(j + " ");
             }
             System.out.println();
          }
-         for(int i[] : arr2){//here we are giving 1 D array for each iteration so type should be same here i[] is assigned by reference code of row which has 1 D array(refer diagram) reference code given to i array so it traverse for 3 times as row 1 D arry is of 3 size to give three 1 D array
-            System.out.print(Arrays.toString(i) + " ");
+         for(int i[] : arr2){// 2D array is array of 1 D array so for each traversing this 1 D array is given to i array each time  
+            System.out.print(Arrays.toString(i) + " ");// sending 1 D array ie i array to to sring method (for conversion of whole array into one chunk string) for every iteration
             System.out.println();
          }
 
