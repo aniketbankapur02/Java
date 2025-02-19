@@ -1,0 +1,93 @@
+refer pic as well
+ Practice set 1) class assignments, Udemy, basic from blogs
+
+
+ -----------c-harry------------
+
+Write a program containing functions that counts the number of positive integers in an array.
+Create an array of size 3x10 containing multiplication tables of the numbers 2,7 and 9, respectively.
+Repeat problem 7 for a custom input given by the user.
+
+---gfg---
+- a[] vs []a
+- Working of arrays and types
+- Multidimensional Arrays in Java
+- Find Average
+- Check if Array is Sorted
+- Count Distinct Elements
+
+------------Udemy----------------
+
+Java Arrays - Puzzles - Arrays of Objects, Primitive Data Types, toStr
+
+Java Arrays - Compare, Sort and Fill
+
+
+Java Arrays - Exercise - Create Student Class - Part 1 - Total and Ave
+
+Java Arrays - Exercise - Create Student Class - Part 2 - Maximum and M
+
+Java String Arrays - Exercise Solutions - Print Day of Week with Most
+
+Adding and Removing Marks - Problem with Arrays
+
+Coding Exercise: Longest Word Finder(arraylist)
+
+Coding Exercise: Find Second Largest Element
+
+Coding Exercise: Are Sum of Arrays Equal
+
+Coding Exercise: Check if an Array is Sorted
+
+Coding Exercise: Return Factors Of A Number in an ArrayList
+
+Coding Exercise: Return ArrayList with multiples of a given number less than a specified limit
+
+----------------------basic sites question-----------------
+https://www.shiksha.com/online-courses/articles/array-programs-in-java/
+
+https://www.refreshjava.com/java/array-and-string-programs
+
+https://www.w3resource.com/c-programming-exercises/array/index.php#google_vignette
+
+https://www.programiz.com/java-programming/examples
+go to array section
+
+https://www.geeksforgeeks.org/java-programming-examples/?ref=lbp
+1 D and 2 D array and ArrayList
+
+https://www.w3schools.com/java/java_howto_add_two_numbers.asp
+do array ones
+
+https://beginnersbook.com/2017/09/java-examples/ (also see end)
+https://beginnersbook.com/2013/05/java-arrays/ (see at end)
+array
+
+https://jenkov.com/tutorials/java/exercises.html
+
+
+https://www.geeksforgeeks.org/tag/java-array-programs/
+
+
+https://www.w3resource.com/java-exercises/array/index.php
+
+https://www.tpointtech.com/java-programs#java-array-programs
+
+https://www.tpointtech.com/java-practice-programs
+
+https://github.com/krimanisha/PREPINSTA--Top-100-codes
+https://prepinsta.com/top-100-codes/
+
+https://evelinedsouza.medium.com/java-common-array-related-programming-problems-for-integers-467b982c22aa
+
+https://www.hirist.tech/blog/top-20-array-interview-questions-in-java/
+
+https://www.crsinfosolutions.com/arrays-in-java-interview-questions-and-answers/
+
+
+
+
+
+
+
+

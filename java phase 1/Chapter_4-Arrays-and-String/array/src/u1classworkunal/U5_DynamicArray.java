@@ -28,7 +28,7 @@ for (int i = 0; i < 3; i++) {
               
             }
         }
-
+        //output
         for (int i = 0; i < 3; i++) {
             // for (int j = 0; j < 3; j++) {
                System.out.println(ref_var.get(i));// printing one by one arraylist
@@ -42,6 +42,9 @@ for (int i = 0; i < 3; i++) {
             /*
              via i i am getting arraylist
              via j i am getting particular element of that arraylist 
+
+             so in arraylist instead of ref_var[][] we are using two . to get values
+             ref_var.get(i).get(j)
              */
             }
             System.out.println();

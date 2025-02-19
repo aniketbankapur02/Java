@@ -1,0 +1,15 @@
+there are three types (note mostly interview questions are imp)
+practice set 1 and 2 belongs to core java and practice set 3 belongs to java DSA
+for patterns please see 2D array end part of kunal video and end part of complete video
+refer pic as well
+ Practice set 1) class assignments, Udemy, basic blogs sites questions
+ during DSA below two should be done 
+ Practice set 2) general interview questions,blog GFG,n other
+ Practice set 3) pattenrs DSA question,kunal,leetocde,striver a to z and SDE sheet apna clg,hackerEarth and hackerrank,codeshef
+ patterns -> sliding windows, 2 pointers, sub array
+ search java DSA array interview question
+https://www.scaler.com/topics/course/dsa-interviews-java/
+
+
+during interview prep we have to searh like this 
+top 100 java coding interview questions
