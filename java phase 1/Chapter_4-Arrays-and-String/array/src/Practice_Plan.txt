@@ -1,4 +1,9 @@
 there are three types (note mostly interview questions are imp)
+topics
+1D array
+2D array
+ArrayList
+
 practice set 1 and 2 belongs to core java and practice set 3 belongs to java DSA
 for patterns please see 2D array end part of kunal video and end part of complete video
 refer pic as well

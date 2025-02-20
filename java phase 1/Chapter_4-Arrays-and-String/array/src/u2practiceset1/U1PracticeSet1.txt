@@ -7,7 +7,7 @@ refer pic as well
 Write a program containing functions that counts the number of positive integers in an array.
 Create an array of size 3x10 containing multiplication tables of the numbers 2,7 and 9, respectively.
 Repeat problem 7 for a custom input given by the user.
-
+---gpt java phase 1 part 1----
 ---gfg---
 - a[] vs []a
 - Working of arrays and types
