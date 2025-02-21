@@ -1,16 +1,16 @@
-package u2practiceset1.gpt;
+package u2practiceset1.sites.shiksha;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- Find the frequency of each element in an array.
-
-Input: {1, 2, 2, 3, 3, 3, 4}
-Output: {1 -> 1, 2 -> 2, 3 -> 3, 4 -> 1}
+https://www.shiksha.com/online-courses/articles/array-programs-in-java/
+ Question 3: Find the Duplicate Elements
+int[] arr = {1, 2, 3, 4, 2, 5, 6, 3};
+Duplicate elements: [2, 3]
  */
 public class Practice1 {
-    static void countFreqArray(int[] arr){
+        static void countDublicateElementInArr(int[] arr){
         Arrays.sort(arr); // bec of logic arr[i] != arr[i - 1]
         for (int i = 0; i < arr.length; i++) {
             int counter = 0;
@@ -22,7 +22,7 @@ public class Practice1 {
                     counter++;
                 }
             }
-            if (counter != 0) {
+            if (counter == 2) {
                 System.out.println(arr[i] + " -> " + counter);
             }
         }
@@ -37,7 +37,7 @@ public class Practice1 {
         arr[i] = sc.nextInt();
     }
 
-        countFreqArray(arr);
+        countDublicateElementInArr(arr);
         sc.close();
 
     }
