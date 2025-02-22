@@ -1,4 +1,5 @@
-there are three types (note mostly interview questions are imp)
+Note : remaining question of practice set 1,2 will be done in phase 2 of core java
+there are three types (note mostly interview questions are imp) 
 topics
 1D array
 2D array
