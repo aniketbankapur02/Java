@@ -30,9 +30,12 @@ public class U4Classwork3 {
 
         System.out.println(a);
         /*
-        when we print a we dont get reference code
+        when we print a we dont get reference code like normal array as normal array do not overrides toString method during println method
+        arraylist calls to string method internally when println method is called
+        tostring method focus on array element formula for converstion to string [e1,e2,...] it will not take reference code of a
+        as elements are empty tosrtring returns [] 
         as a reprenting whole whole list which is internally convertd to string
-        as list is blank it is returing [] not null bec of converstion to string internally
+        as list is blank it is returing [] not reference code bec of converstion to string internally by toString
 
         you can see default value is blank via clt + right
          arrayli
@@ -40,5 +43,10 @@ public class U4Classwork3 {
         // int[] a1 = new int[3];
 
         // System.out.println(a1);
+        /*
+        o/p -> you get reference code not to string value
+         As when normal array is passed as arg it will not override tostring method
+         so normal [I@hexacode converstion is made and it is return 
+         */
     }
 }
