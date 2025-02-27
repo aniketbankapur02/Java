@@ -1,0 +1,23 @@
+refer pic as well
+ Practice set 2) general interview questions,blog GFG,n other,
+ search top core java and java DSA array java interview question asked
+
+
+ -----------Blog-------------
+
+ https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
+ https://leetcode.com/explore/learn/card/array-and-string/205/array-two-pointer-technique/
+ https://www.scaler.com/topics/course/dsa-interviews-java/
+ https://javaconceptoftheday.com/java-array-interview-programs/#google_vignette
+ 
+
+---gpt java phase 1 part 1----
+
+
+search top 
+--------------------core java array interview question asked
+
+
+
+
+
