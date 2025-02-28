@@ -1,3 +1,5 @@
+most imp are interview questions and patterns questions do alll patterns
+
 Note : remaining question of practice set 1,2 will be done in phase 2 of core java
 there are three types (note mostly interview questions are imp) 
 topics
@@ -20,6 +22,13 @@ search string dsa patterns get striver,neetcode,leetcode blogs
 
 
 set 3 questions which is DSA part
+do this as well
+Pattern Searching	indexOf(), contains(), regex
+Regex for Patterns	Pattern.compile("Java")
+in hacker rank there are lot 
+https://www.hackerrank.com/domains/java/java-strings/difficulty/1
+https://www.hackerrank.com/domains/java?filters%5Bsubdomains%5D%5B%5D=java-strings
+
 https://www.scaler.com/topics/course/dsa-interviews-java/
 
 lot of concepts for DSA string patterns
