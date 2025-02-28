@@ -161,6 +161,126 @@ public class Practice5 {
         return s1 + ""; //typecast for string converstion or use to string to convert SB to string
     }
 
+    // as there is no \0 termination we have to use delete
+    static String mystrip(String s){
+        StringBuilder s1 = new StringBuilder(s);
+        int j = 0;
+        /*
+        System.out.println(s1.length());
+                for (int i = s1.length() - 1; i != -1; i--) {
+                    if (s1.charAt(i) == ' ') {
+                        s1.deleteCharAt(i);
+                        // i--;
+                    }
+                }
+        System.out.println(s1.length());         
+         */
+
+         /*
+         System.out.println(s1.length());
+                 for (int i = 0; i < s1.length(); i++) {
+                     if (s1.charAt(i) == ' ') {
+                         s1.deleteCharAt(i);
+                         i--;
+                     }
+                 }
+                 System.out.println(s1.length());
+          
+          */
+
+          // removes back spaces loop ends when char is something apart from spaces
+System.out.println(s1.length());
+        for (int i = s1.length() - 1; s1.charAt(i) == ' '; i--) {
+            s1.deleteCharAt(i);
+            // i--;
+        }
+System.out.println(s1.length());
+
+// removing front spaces
+        for (int i = 0; i < s1.length(); i++) {
+            if (s1.charAt(i) != ' ') {
+                s1.setCharAt(j, s1.charAt(i));
+                j++;
+                if (i == s1.length() - 1) {
+                    break;
+                }
+                s1.deleteCharAt(i);
+                i--;
+            }
+        }
+        System.out.println(s1.length());
+
+        return s1 + "";
+    }
+
+// only works for split space as i was directly written in code for reference of char c so now replace  ' ' by char c for custom c input
+    static String[] mysplit(String s,char c){
+        int counter = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ') {//
+                counter++;
+            }
+        }
+        System.out.println(counter);
+
+        StringBuilder[] str = new StringBuilder[counter + 1];
+
+        for (int i = 0; i < str.length; i++) {
+            str[i] = new StringBuilder();// no need to declare size
+        }
+
+        int counter2 = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ') {
+                counter2++;
+
+            }
+            str[counter2].append(s.charAt(i));
+            // str[counter2].setCharAt(i,s.charAt(i));// this i char set also we have to reset i every time so we have to use j wont as we dont know size of individual array
+        }
+        String[] str2 = new String[counter + 1];
+
+        for (int i = 0; i < str.length; i++) {
+            str2[i] = str[i].toString();
+        }
+
+        return str2;
+        
+    }
+    static String[] mysplit2(String s,String c){
+        int counter = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == c.charAt(0)) {
+                counter++;
+            }
+        }
+        System.out.println(counter);
+
+        StringBuilder[] str = new StringBuilder[counter + 1];
+
+        for (int i = 0; i < str.length; i++) {
+            str[i] = new StringBuilder();// no need to declare size
+        }
+
+        int counter2 = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == c.charAt(0)) {
+                counter2++;
+                continue;
+            }
+            str[counter2].append(s.charAt(i));
+            // str[counter2].setCharAt(i,s.charAt(i));// this i char set also we have to reset i every time so we have to use j wont as we dont know size of individual array
+        }
+        String[] str2 = new String[counter + 1];
+
+        for (int i = 0; i < str.length; i++) {
+            str2[i] = str[i].toString();
+        }
+
+        return str2;
+        
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // String s = sc.next();
@@ -173,12 +293,19 @@ public class Practice5 {
         // String s2 = myCopystr(s1);
         // System.out.println(s2);
 
-        char[] arr = new char[]{'a','n','i','k','e','t'};
-       String s1 =  Arrays.toString(arr);
-        String s = myToString(arr); 
-        System.out.println(s + "<-->" + s1);
+    //     char[] arr = new char[]{'a','n','i','k','e','t'};
+    //    String s1 =  Arrays.toString(arr);
+    //     String s = myToString(arr); 
+    //     System.out.println(s + "<-->" + s1);
+    // System.out.println(mystrip("     aniket    "));
 
+    // System.out.println(Arrays.toString(split("Aniket Bankapur hello world", ' ')));
 
+    String s1 = "Aniket Bankapur hello world";
+    String[] s = mysplit2(s1, " ");// passing single string getting multiple string also try single string element as e k 
+
+    System.out.println(Arrays.toString(s));// converting array to string for comfort printing
+    System.out.println(Arrays.toString(s1.split(" ")));// directly printing
 
         sc.close();
     }

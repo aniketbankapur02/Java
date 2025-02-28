@@ -4,46 +4,32 @@ refer pic as well
 
  -----------c-harry------------
 
-Write a program containing functions that counts the number of positive integers in an array.
-Create an array of size 3x10 containing multiplication tables of the numbers 2,7 and 9, respectively.
-Repeat problem 7 for a custom input given by the user.
+----c-string-screenshot-qs---
+
+
 ---gpt java phase 1 part 1----
+
 ---gfg---
-- a[] vs []a
-- Working of arrays and types
-- Multidimensional Arrays in Java
-- Find Average
-- Check if Array is Sorted
-- Count Distinct Elements
+Strings in Java
+- Escape Sequences and Raw Strings
+- StringBuffer and StringBuilder
+- StringBuffer and StringBuilder Methods
+- Pattern Searching in Java
+- Check For Palindrome In Java
+- Reverse A String in Java
+
+Escape Sequences	\n, \t, \"
+Raw Strings (Java 21)	\"" No escapes needed \""
+Pattern Searching	indexOf(), contains(), regex
+Regex for Patterns	Pattern.compile("Java")
+
 
 ------------Udemy----------------
-
-Java Arrays - Puzzles - Arrays of Objects, Primitive Data Types, toStr
-
-Java Arrays - Compare, Sort and Fill
+Coding Exercise: Does a String have two consecutive identical characters
+Coding Exercise: Right most Digit in a String
 
 
-Java Arrays - Exercise - Create Student Class - Part 1 - Total and Ave
-
-Java Arrays - Exercise - Create Student Class - Part 2 - Maximum and M
-
-Java String Arrays - Exercise Solutions - Print Day of Week with Most
-
-Adding and Removing Marks - Problem with Arrays
-
-Coding Exercise: Longest Word Finder(arraylist)
-
-Coding Exercise: Find Second Largest Element
-
-Coding Exercise: Are Sum of Arrays Equal
-
-Coding Exercise: Check if an Array is Sorted
-
-Coding Exercise: Return Factors Of A Number in an ArrayList
-
-Coding Exercise: Return ArrayList with multiples of a given number less than a specified limit
-
-----------------------basic sites question-----------------
+----------------------basic sites question---------------search--string--
 https://www.shiksha.com/online-courses/articles/array-programs-in-java/
 
 https://www.refreshjava.com/java/array-and-string-programs
@@ -85,8 +71,26 @@ https://www.hirist.tech/blog/top-20-array-interview-questions-in-java/
 https://www.crsinfosolutions.com/arrays-in-java-interview-questions-and-answers/
 
 
+---more--sites
+search queries
+1)java string coding problems interview questions
+https://www.linkedin.com/pulse/top-35-string-coding-problems-programming-job-soma-sharma-zawjc/
+https://javarevisited.blogspot.com/2015/01/top-20-string-coding-interview-question-programming-interview.html#
+https://www.java67.com/2018/04/21-string-programming-and-coding-interview-questions-answers.html
+https://medium.com/@kirti07arora/top-10-most-asked-string-interview-questions-with-solutions-in-java-6e53370899be
 
 
+
+2)java string coding problems
+https://www.geeksforgeeks.org/java-string-exercise/
+https://www.w3resource.com/java-exercises/string/index.php
+https://www.scholarhat.com/tutorial/java/string-in-java-interview-questions
+https://soshace.com/2020/03/16/top-12-string-programs-for-your-next-java-interview/
+https://www.tutorialspoint.com/most-asked-string-coding-problems-for-programming-interviews
+https://automationqahub.com/common-java-string-coding-problems-and-answers/#google_vignette
+https://www.quora.com/What-are-the-strings-programming-questions-in-java-interview
+https://www.tutorjoes.in/java_programming_tutorial/string_exercise_programs_in_java#google_vignette
+https://javaconceptoftheday.com/java-interview-programs-on-strings/#google_vignette
 
 
 

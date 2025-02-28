@@ -3,13 +3,21 @@ refer pic as well
  search top core java and java DSA array java interview question asked
 
 
- -----------Blog-------------
+ -----------Blog-----------search--string--
 
- https://www.geeksforgeeks.org/top-50-array-coding-problems-for-interviews/
+https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/
+https://www.geeksforgeeks.org/string-data-structure/
  https://leetcode.com/explore/learn/card/array-and-string/205/array-two-pointer-technique/
  https://www.scaler.com/topics/course/dsa-interviews-java/
  https://javaconceptoftheday.com/java-array-interview-programs/#google_vignette
  
+----see patterns lot of resources
+https://medium.com/@amitvsolutions/strings-in-dsa-f9224917a44d
+https://www.linkedin.com/pulse/top-35-string-coding-problems-programming-job-soma-sharma-zawjc/
+https://www.hackerrank.com/domains/java/java-strings/difficulty/1
+https://www.hackerrank.com/domains/java?filters%5Bsubdomains%5D%5B%5D=java-strings
+https://github.com/RecursiveSharma/StringCodingQuestions
+https://www.naukri.com/code360/problem-lists/top-string-coding-interview-questions
 
 ---gpt java phase 1 part 1----
 

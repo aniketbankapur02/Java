@@ -11,11 +11,28 @@ refer pic as well
  Practice set 1) class assignments, Udemy, basic blogs sites questions
  during DSA below two should be done 
  Practice set 2) general interview questions,blog GFG,n other
- Practice set 3) pattenrs DSA question,kunal,leetocde,striver a to z and SDE sheet apna clg,hackerEarth and hackerrank,codeshef
+ 
+ 
+ Practice set 3) pattenrs DSA question,kunal,leetocde,striver a to z and SDE sheet apna clg,hackerEarth and hackerrank,codeshef,interviewBit
  patterns -> sliding windows, 2 pointers, sub array
- search java DSA array interview question
+ search java DSA array interview question string pattern is most imp
+search string dsa patterns get striver,neetcode,leetcode blogs
+
+
+set 3 questions which is DSA part
 https://www.scaler.com/topics/course/dsa-interviews-java/
 
+lot of concepts for DSA string patterns
+https://medium.com/@amitvsolutions/strings-in-dsa-f9224917a44d
+
+lot of resources 
+https://www.linkedin.com/pulse/top-35-string-coding-problems-programming-job-soma-sharma-zawjc/
+https://medium.com/@amitvsolutions/strings-in-dsa-f9224917a44d
+https://leetcode.com/discuss/study-guide/2001789/Collections-of-Important-String-questions-Pattern
+https://www.geeksforgeeks.org/introduction-to-pattern-searching/
+https://medium.com/@anandgaur2207/week-4-strings-in-dsa-f7ba389e9daf
+https://www.techinterviewhandbook.org/algorithms/string/
 
 during interview prep we have to searh like this 
 top 100 java coding interview questions
+
