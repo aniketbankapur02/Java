@@ -26,8 +26,10 @@ public class U1ClassWork{
         // we can make student entity array
         // where student[0] student[1] student[2] are the objects/instance/entity
 
-        Student[] students = new Student[4];// array declaration
+        // below is array of object
+        Student[] students = new Student[4];// array  declaration for reference variable // array object creation
 
+        // individual object creation // now actual object creation for class entity
         for (int i = 0; i < students.length; i++) {
             students[i] = new Student();//inilization of array object in heap
         }
@@ -52,6 +54,8 @@ public class U1ClassWork{
         // refer BTS via diagram made in notebook
 
         System.out.println(students[0].marks);
+
+        
         
 
 
