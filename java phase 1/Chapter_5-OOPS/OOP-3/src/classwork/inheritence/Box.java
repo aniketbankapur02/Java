@@ -16,6 +16,10 @@ public class Box {
         this.w = side;
         this.h = side;
     }
+    Box(int side1,int side2){
+        this.l = side1;
+        this.w = side2;
+    }
     Box(int l,int w,int h){
         this.l = l;
         this.w = w;
