@@ -31,7 +31,7 @@ public class useinheritece2 {
         // thats why this works Box obj2 = new BoxWeight(10, 20, 30, 40); child object in heap can handle l w h as child was inherited
         // and this wont work // BoxWeight obj3 = new Box(10, 20, 30);// error as parent object in heap cannot handle weight field as he does not has idea for weight fields
 
-
+        BoxWeight.hello();
         
 
     }

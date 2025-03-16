@@ -1,4 +1,4 @@
-package classwork.polymorphism;
+package classwork.polymorphism.runtimepolymorphism;
 
 public class Triangle extends Shapes {
     void area(){

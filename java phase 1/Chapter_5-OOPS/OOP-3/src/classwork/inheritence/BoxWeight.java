@@ -51,5 +51,8 @@ public class BoxWeight extends Box {// dont need to import as it is in same pack
         super(l, w);
         this.weight = weight;
     }
+    static void hello(){
+        System.out.println("hello from child");
+    }
 
 }

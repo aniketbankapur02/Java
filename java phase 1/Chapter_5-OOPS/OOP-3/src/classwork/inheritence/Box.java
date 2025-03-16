@@ -36,6 +36,9 @@ public class Box {
     void information(){
         System.out.println("Some info");
     }
+    static void hello(){
+        System.out.println("hello from parent");
+    }
 
 
     
