@@ -1,0 +1,236 @@
+1)encapsulation and abstraction with code implementation
+
+1. Encapsulation
+Definition:
+Encapsulation is the practice of bundling data (variables) and methods (functions) that act on the data into a single unit (a class) and restricting direct access to some of the object’s components. This is done using access modifiers (like private, public) and getters/setters.
+
+Purpose:
+
+Protect the internal state of an object.
+
+Control how data is accessed or modified.
+
+Avoid unintended side effects.
+
+Example: Encapsulation in Code
+java
+Copy
+public class BankAccount {
+    // Private data (encapsulated)
+    private String accountNumber;
+    private double balance;
+
+    // Public constructor
+    public BankAccount(String accountNumber, double initialBalance) {
+        this.accountNumber = accountNumber;
+        this.balance = initialBalance;
+    }
+
+    // Public methods to interact with private data (controlled access)
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: $" + amount);
+        }
+    }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawn: $" + amount);
+        } else {
+            System.out.println("Invalid withdrawal amount");
+        }
+    }
+
+    // Getter for balance (read-only access)
+    public double getBalance() {
+        return balance;
+    }
+
+    // No setter for balance (direct modification is restricted)
+}
+Usage:
+
+java
+Copy
+public class Main {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount("123456", 1000);
+        account.deposit(500); // Valid
+        account.withdraw(200); // Valid
+        // account.balance = 100000; // Error: 'balance' is private
+        System.out.println("Current balance: $" + account.getBalance());
+    }
+}
+Key Points:
+
+balance and accountNumber are private and cannot be directly accessed outside the class.
+
+Controlled access is provided via methods like deposit() and withdraw().
+
+The internal logic (e.g., validating withdrawal amounts) is hidden from the user.
+
+2. Abstraction
+Definition:
+Abstraction focuses on hiding complex implementation details and exposing only essential features. It simplifies interaction with a system by providing a high-level interface (e.g., abstract classes, interfaces).
+
+Purpose:
+
+Reduce complexity by hiding internal details.
+
+Define a clear contract for how to interact with a class/component.
+
+Example: Abstraction in Code
+java
+Copy
+// Abstract class (defines a template)
+abstract class Vehicle {
+    // Abstract method (no implementation)
+    public abstract void start();
+
+    // Concrete method (implementation provided)
+    public void stop() {
+        System.out.println("Vehicle stopped.");
+    }
+}
+
+// Concrete class implementing the abstraction
+class Car extends Vehicle {
+    @Override
+    public void start() {
+        System.out.println("Car started with a key.");
+    }
+}
+
+// Another concrete class
+class ElectricCar extends Vehicle {
+    @Override
+    public void start() {
+        System.out.println("Electric car started via app.");
+    }
+}
+Usage:
+
+java
+Copy
+public class Main {
+    public static void main(String[] args) {
+        Vehicle car = new Car();
+        Vehicle eCar = new ElectricCar();
+
+        car.start();    // Output: "Car started with a key."
+        eCar.start();   // Output: "Electric car started via app."
+        eCar.stop();    // Output: "Vehicle stopped."
+    }
+}
+Key Points:
+
+The Vehicle abstract class defines a contract (the start() method).
+
+Implementation details of start() are hidden in subclasses (Car, ElectricCar).
+
+Users interact with the abstraction (Vehicle) without worrying about internal logic.
+
+Encapsulation vs. Abstraction
+Aspect	Encapsulation	Abstraction
+Focus	Data hiding and access control.	Hiding complexity, showing essentials.
+Implementation	Uses private fields and getters/setters.	Uses abstract classes, interfaces.
+Purpose	Protect data integrity.	Simplify interaction with a system.
+Example	private variables in a BankAccount.	Vehicle abstract class with start().
+Real-World Analogy
+Encapsulation: A vending machine. You don’t see its internal mechanics, but you interact via buttons (methods) to get a snack.
+
+Abstraction: A car’s steering wheel. You don’t need to know how the engine works to drive it.
+
+
+2)difference between encapsulation and abstraction
+
+Encapsulation vs. Abstraction: Key Differences
+Aspect	Encapsulation	Abstraction
+Definition	Bundling data and methods into a class, hiding internal details.	Hiding complexity by exposing only essential features.
+Purpose	Protect data integrity and control access.	Simplify interaction with a system by focusing on "what" it does, not "how".
+Implementation	Uses private fields and public getters/setters.	Uses abstract classes, interfaces, or method signatures.
+Focus	Data hiding: Restricting direct access to data.	Complexity hiding: Ignoring unnecessary details.
+Real-World Analogy	A pill (capsule) hiding medicine inside.	A car’s steering wheel (you drive without knowing engine details).
+Code Example	private variables with controlled access via methods.	Abstract classes defining a template (e.g., Animal with sound()).
+1. Encapsulation in Action
+What it does:
+
+Protects data by making fields private and exposing controlled access via methods (e.g., getName(), setName()).
+
+Ensures data validation (e.g., preventing negative values for an account balance).
+
+Example:
+
+java
+Copy
+public class Student {
+    private String name; // Encapsulated field
+    private int age;
+
+    // Getter (read access)
+    public String getName() {
+        return name;
+    }
+
+    // Setter (write access with validation)
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid age!");
+        }
+    }
+}
+Why use it:
+
+Prevents external code from modifying data in invalid ways (e.g., setting age = -30).
+
+Allows internal logic to change without breaking external code.
+
+2. Abstraction in Action
+What it does:
+
+Defines a simplified interface for complex operations (e.g., a start() method for a vehicle).
+
+Lets users interact with high-level concepts without worrying about implementation.
+
+Example:
+
+java
+Copy
+// Abstract class (defines "what" to do)
+abstract class PaymentGateway {
+    public abstract void processPayment(double amount); // Abstract method (no implementation)
+}
+
+// Concrete class (defines "how" to do it)
+class PayPalGateway extends PaymentGateway {
+    @Override
+    public void processPayment(double amount) {
+        System.out.println("Processing $" + amount + " via PayPal.");
+        // Hidden logic: API calls, encryption, etc.
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        PaymentGateway gateway = new PayPalGateway();
+        gateway.processPayment(100); // User only cares about paying, not the implementation.
+    }
+}
+Why use it:
+
+Users interact with PaymentGateway without knowing how PayPal or Stripe work internally.
+
+You can switch payment providers without changing the user’s code.
+
+Key Takeaways
+Encapsulation is about protecting data (e.g., using private variables and getters/setters).
+Example: A bank account balance that can’t be directly modified.
+
+Abstraction is about simplifying complexity (e.g., using abstract classes/interfaces).
+Example: A sendEmail() method where you don’t care about SMTP server details.
+
+Together: Encapsulation hides data, while abstraction hides implementation. Both make code modular, secure, and easier to maintain.
