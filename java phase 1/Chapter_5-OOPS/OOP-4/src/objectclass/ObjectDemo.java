@@ -18,6 +18,7 @@ public class ObjectDemo {
     /*
      hasdcode is unique for every for object
      now lets override to our hash code
+     we have overrided hascode we send num value instead of hexcode 
      */
     @Override
     public int hashCode() {
