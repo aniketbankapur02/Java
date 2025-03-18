@@ -64,9 +64,11 @@ public class ObjectDemo {
 
         System.out.println(obj1 instanceof ObjectDemo);// returns T or F so it is T
         System.out.println(obj1.getClass());// returns class name
+        System.out.println(obj1.getClass().getName());// returns class name
         /*
          above getClass() is method member of all parent class object
          so you can use with any instance as every class is inhierited by parent object so you can use it or override it 
          */
+        // obj1.getClass(). you can explore methods via .
     }
 }
