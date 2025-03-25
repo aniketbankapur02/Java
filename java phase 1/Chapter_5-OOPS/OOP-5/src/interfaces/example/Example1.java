@@ -18,7 +18,7 @@ interface Media {
 // we can do multiple inheritence if method are unique
 // we can do with Engine Brake and Media, Brake
 // cannot do with Engine and Media toghter bec of confusion which method to override Engine method or Media method
-public class Example1 implements Brake,Engine{
+class Car implements Brake,Engine{
 /*
  now i can implement from two inerfaces which was not possible in inherience
  */
@@ -43,4 +43,12 @@ public class Example1 implements Brake,Engine{
         // TODO Auto-generated method stub
         
     }
+}
+
+public class Example1 {
+public static void main(String[] args) {
+    Car car = new Car();
+    car.acc();
+}
+    
 }
