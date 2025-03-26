@@ -1,6 +1,6 @@
 package interfaces.defaultdemo;
 
-interface A {
+ interface A {
     default void fun(){
         System.out.println("fun method of A");
     }
@@ -12,7 +12,7 @@ interface B{
     default void fun(){
         System.out.println("fun method of B");
     }
-    void greet();
+   void greet();
 }
 
 public class Example1 implements A,B{
@@ -25,6 +25,9 @@ public class Example1 implements A,B{
     // so we need to override so that there is only one method body for fun not two default methods
     // if we override there will be one body for both common method of interface    
 
+    /*
+     soln keep override to have one body for both fun or remove fun of B or A
+     */
     // @Override
     // public void fun() {
     //     System.out.println("fun");
