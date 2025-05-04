@@ -13,6 +13,11 @@ Error: Could not find or load main class mypack.Simple5
 Caused by: java.lang.ClassNotFoundException: mypack.Simple5
 PS C:\code\prog_lang\Vscode_workspace\project_1> java -cp  ./com/ecommerce mypack.Simple5
 Hello Java
+
+---- latest
+PS C:\code\prog_lang\java\java pre\Vscode_workspace\project_1>  javac -d . hello1.java  
+PS C:\code\prog_lang\java\java pre\Vscode_workspace\project_1> java -cp . mypack.Simple5
+Hello Java
  */
 
 //a package folder is created and in that this simple5 is present 

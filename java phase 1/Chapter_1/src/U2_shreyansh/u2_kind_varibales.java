@@ -59,7 +59,7 @@ float b ;
 
     //System.out.println(ref);// error local varibale is not initialized
 
-    int array[];
+    int array[];// give null value for local variable in stack storage
     // System.out.println(array);// error local varibale is not initialized
 
         String string;

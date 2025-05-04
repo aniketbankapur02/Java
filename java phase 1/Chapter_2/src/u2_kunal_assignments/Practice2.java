@@ -1,5 +1,5 @@
 package u2_kunal_assignments;
-// nput a number and print all the factors of that number (use loops).
+// input a number and print all the factors of that number (use loops).
 // https://www.geeksforgeeks.org/find-all-factors-of-a-natural-number/
 // later try oprimize approch  time complexity for optimize solution is  O(sqrt(n))
 // below solution is of O(n)
