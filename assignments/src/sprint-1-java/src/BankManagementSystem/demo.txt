@@ -1,0 +1,39 @@
+viewCustomer(){
+    sout("Enter account details);
+    accNO = sc.nextInt();
+
+    for(Customers C : c){
+    if(C.getAccno == accNO){
+        sout(C);
+    } 
+
+    }
+}
+while
+switch {
+    case1 :
+    adminLogin();
+    case 2 :
+    customerLogin();
+}
+
+customerLogin(){
+    auth
+    Enter accno and pass
+    if(c.getaccno == accno && c.getpass == pass){
+        login successfully 
+        menu();
+    }else{
+        login failed re try;
+    }
+}
+
+customerMenu(){
+    while
+switch {
+    case1 :
+    1();
+    case 2 :
+    2();
+}
+}
