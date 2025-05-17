@@ -1,0 +1,167 @@
+Write a Java code that implements the following:
+
+Create a class Region with following:
+
+1.Attributes
+
+Regionld: Integer
+
+RegionName: String
+
+noOfPoliticians: Integer
+
+Politician: List of Politicians for the Region.
+
+2.Getters and Setters Methods
+
+3.Parameterized constructor
+
+Create a class Politician with following:
+
+1.Attributes
+
+Politician Name: String
+
+PartyName: String
+
+votes\:Integer
+
+2.Getters and Setters Methods.
+
+3.Parameterized constructor.
+
+Relationship
+
+Each Region can have multiple Politician objects.
+
+Create a class Service with following methods
+
+1. Find the Politician with maximum votes:
+
+-This method will take a list of Region objects as input.
+
+-This method finds and Prints the Politician's Name who has scored the maximum votes for the region in the format specified below:
+
+RegionName with id RegionID =
+
+Politician Name
+
+-If two or more politicians within the region have secured equal maximum
+
+number of votes then display-"No single politician found with maximum
+
+votes for RegionName" except the double quotes. Here RegionName must be replaced by the name of the region(input).
+
+-You need to throw an custom based exception in case of, if the votes associated with a Politician is negative.
+
+The method should throw an exception called votesis NegativeException which includes a message "Alert: Votes of a certain politician is negative." (without quotes).
+
+2.find Region Name where maximum people have voted:
+
+-This method will take a list of Region objects
+
+-Method should print the Regions Name where maximum people have voted
+
+in the format specified below. This can be found by computing the sum total of the votes of a region.
+
+Region with maximum votes = RegionName
+
+-If two or more regions have same number of maximum votes then display- No region found with
+maximun votes."
+
+-You need to throw an custom based exception in case of, if the votes associated with a region is negative. The method should throw an exception called votesis NegativeException which includes a message "Alert: Votes of a certain region is negative." (without quotes).
+
+Refer sample output for format.
+
+Create a class Tester
+
+1. Take inputs
+
+2. Create Object of Service class to call the methods.
+
+Refer the sample input and output.
+
+Sample Input
+
+3//No. of regions
+
+1001//ld of the first region
+
+Region1//Name of the region
+
+3//No. of politicians who stood for election for region 1
+
+Region1\_Politician1//Name of the Politician 1
+
+Region1\_Party1//Party name for the politician1
+
+375//No. of votes obtained by poltician1
+
+Region1\_Politician2//Name of the Politician2
+
+Region1\_Party2//Party name for the politician2
+
+753//No. of votes obtained by poltician2
+
+Region1\_Politician3//Name of the Politician3
+
+Region1\_Party3//Party name for the politician3
+
+1375//No. of votes obtained by poltician3
+
+2001//ld of the second region
+
+Region2//Name of the region
+
+4//No. of politicians who stood for election for region2
+
+Region2\_Politician 1/Name of the Politiciani
+
+Region2\_Party1//Party name for the politician1
+
+1375//No. of votes obtained by po pician1
+Region2\_Politician2//Name of the Politician2
+
+Region2\_Party2//Party name for the politician2
+
+4753//No. of votes obtained by poltician2
+
+Region2\_Politician3//Name of the Politician3
+
+Region2\_Party3//Party name for the politician3
+
+315//No. of votes obtained by poltician3
+
+Region2\_Politician4//Name of the Politician4
+
+Region2\_Party4//Party name for the politician4
+
+2875//No. of votes obtained by poltician3
+
+3001//ld of the third region
+
+Region3//Name of the region
+
+2//No. of politicians who stood for election for region3
+
+Region3\_Politician1//Party name for the politician 1
+
+Region3\_Party1//Party name for the politician 1
+
+6365//No. of votes obtained by poltician1
+
+Region3\_Politician2//Name of the Politician2
+
+Region3\_Party2//Party name for the politician2
+
+4733//No. of votes obtained by poltician2
+
+Sample output:
+
+Region1 with id 1001 = Region1\_Politician3
+
+Region2 with id 2001 = Region2\_Politician2
+
+Region3 with id 3001 = Region3\_Politician1
+
+Region with maximum votes = Region3
