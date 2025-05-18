@@ -25,8 +25,9 @@ public static void main(String[] args) {
         Movies l2 = new Movies(mid, mName, mRate, noact, a);
         l.add(l2);
     }
-    String searchact1 = sc.next();
-    String searchact2 = sc.next();
+    // sc.nextLine();
+    String searchact1 = sc.nextLine();
+    String searchact2 = sc.nextLine();
     Service s = new Service();
 
     s.findListMovie(l, searchact1);
@@ -89,7 +90,7 @@ class Service {
         if (!found) {
             throw new NoAct("No Actor Found");
         }
-        System.out.println("hello");
+        // System.out.println("hello");
         
         return (double)avg/count;
     }
