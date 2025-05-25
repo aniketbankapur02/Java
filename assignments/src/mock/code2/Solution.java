@@ -49,6 +49,7 @@ class Service {
                 if (pol.votes > maxVotes) {
                     maxVotes = pol.votes;
                     polName = pol.pname;
+                    equal = false;
                 }else if (maxVotes == pol.votes) {
                     equal = true;
                 }       
