@@ -1,0 +1,249 @@
+    static void rev_array(int[] arr ){
+        int k = arr.length - 1;
+        for (int i = 0;i < arr.length/2 ; i++){
+            int temp = arr[k-i];
+            arr[k - i] = arr[i];
+            arr[i] = temp;
+        }             
+        
+   
+    }
+
+    static float rev_array(int[] arr ){
+        int sum = 0;
+    for(int i = 0;i < arr.length;i++){
+        sum += arr[i];
+    }
+        return (float)sum/arr.length;
+    }
+
+        static void sortAscending(int[] arr){
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+
+            int max1 = 0;
+        int max2 = 0;
+        if (arr[0] > arr[1]){
+            max1 = arr[0];
+            max2 = arr[1];
+        } else {
+            max1 = arr[1];
+            max2 = arr[0];
+        }
+        
+		for (int i = 2;i < arr.length ;i++) {
+		   if (arr[i] > max1) {
+		       max2 = max1;
+		       max1 = arr[i];
+		   }else if(arr[i] > max2){
+		       max2 = arr[i];
+		   }
+
+		}
+		System.out.println(max2);
+
+
+        	public static void rotateLeft(int[] arr, int positions) {
+int temp = 0;
+		for(int i = 0 ; i < positions ; i++) {
+			temp = arr[0];
+			for(int j = 0 ; j < arr.length - 1; j++) {
+				arr[j] = arr[j + 1];
+			}
+	        	arr[arr.length - 1] = temp;
+		}
+	}
+
+        public static void rotateRight(int[] arr, int positions) {
+        for (int i = 0; i < positions; i++) {
+            int temp = arr[arr.length - 1]; // Store the last element
+            // Shift all elements to the right by 1
+            for (int j = arr.length - 1; j > 0; j--) {
+                arr[j] = arr[j - 1];
+            }
+            arr[0] = temp; // Place the stored element at the first position
+        }
+    }
+
+
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter sentence:");
+        String sentence = sc.nextLine();
+        sentence += " ";
+
+        String word = "";
+        for (int i = 0; i < sentence.length(); i++) {
+            char ch = sentence.charAt(i);
+            if (ch != ' ')
+                word += ch;
+            else {
+                // reverse word
+                for (int j = word.length() - 1; j >= 0; j--){
+                    System.out.print(word.charAt(j));
+                }
+                System.out.print(" ");
+                word = "";
+            }
+        }
+        sc.close();
+    }
+
+    static boolean checkAnagram(String s1,String s2){
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+        
+        char[] a1 = s1.toCharArray();
+        char[] a2 = s2.toCharArray();
+        
+        Arrays.sort(a1);
+        Arrays.sort(a2);
+
+        return Arrays.equals(a1, a2);
+
+    }
+
+    static boolean palindrome(String s){
+        // we have written null condition to avoid null pointer exepection
+        // if s.length() is written first and s is null then you will get null pointer execption as null s cannot be used with length method 
+        if (s == null || s.length() == 0) {// edge cases null or empty string return flase
+            return false;// its upto interviewer
+        }
+        s = s.toLowerCase();
+        int j = s.length() - 1;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == s.charAt(j - i)) {
+                return false;// even if one char is not equal it not palindrome
+            }
+        }
+
+        // if all checks are passed then it is palindrome
+
+        return true;
+
+    }
+
+        static StringBuilder slice(String s,int m,int n){
+        StringBuilder s1 = new StringBuilder(s);
+        int i = 0;
+        for (; m <= n; i++) {
+            // System.out.println(i + " " + m);
+            if (m <= n) {
+                s1.setCharAt(i,s1.charAt(m));
+            }
+            m++;
+
+        }
+        while (i <= s.length() - 1) {
+            s1.setCharAt(i,' ');// use ' ' instead \0 as it not terminator in java like c
+            // s1.setCharAt(i,'\0');
+            i++;
+        }
+        return s1;
+    }
+
+        static boolean checkConsecutive(String s){
+        for (int i = 0; i < s.length(); i++) {
+            if (i == s.length() - 1) {// imp edge case
+                break;
+            }
+            if (s.charAt(i) == s.charAt(i + 1)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+          static int getRightMostDigit(String s){
+        int temp = -1;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) >= '0' && s.charAt(i) <= '9' ) {
+                temp = s.charAt(i) - '0';
+                // 0 ascci code - 0 assci code = 0
+                // 0 ascci code - 1 assci code = 1
+                // .
+                // .
+                // .
+            }
+        }
+        return temp;
+    }
+    public class RemoveMiddleName {
+    public static void main(String[] args) {
+        String fullName = "Rohit Mahesh Pawar";
+        String[] parts = fullName.split(" ");
+
+        if (parts.length == 3) {
+            String result = parts[0] + " " + parts[2];
+            System.out.println("Without middle name: " + result);
+        } else {
+            System.out.println("Name doesn't have exactly 3 parts.");
+        }
+    }
+}
+
+    public class RemoveAllMiddleNames {
+    public static void main(String[] args) {
+        String fullName = "Rohit Mahesh Ramesh Pawar";
+        String[] parts = fullName.trim().split(" ");
+
+        if (parts.length >= 2) {
+            String result = parts[0] + " " + parts[parts.length - 1];
+            System.out.println("First and Last Name: " + result);
+        } else {
+            System.out.println("Name is too short.");
+        }
+    }
+}
+
+        static String removeWord(String sentence,String word){
+        String[] temp = sentence.split(" ");
+        String newSentence = "";
+        
+        for(String words : temp){
+            if (words.equals(word)){
+                continue;
+            } else{
+                newSentence = newSentence + " " + words;
+            }
+        }
+        
+        
+        return newSentence;
+        
+    }
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+		System.out.println(removeWord(sc.nextLine(),sc.nextLine()));
+	}
+
+    class Solution {
+    public static int arrayLength(int[] arr) {
+        // code here
+        int counter = 0;
+        int i = 0;
+        try{
+        while(true){
+            arr[counter++] = 1;
+        }
+        }catch(Exception e){
+        // nothing to handle now it will just continue the flow of code
+        }
+        return counter - 1;
+    }
+}
+
+https://www.geeksforgeeks.org/java/java-string-exercise/
+
+https://www.geeksforgeeks.org/java/java-program-to-remove-a-given-word-from-a-string/
